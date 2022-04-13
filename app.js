@@ -25,3 +25,9 @@ sayHi(names.peter)
 console.log(alternative )
 
 require('./mind-granade')
+
+const _ = require('lodash')
+
+const lists = [1,[2,[3,[4]]]]
+const items = _.flattenDeep(lists)
+console.log(items)
