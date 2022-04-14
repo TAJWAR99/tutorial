@@ -31,3 +31,12 @@ const _ = require('lodash')
 const lists = [1,[2,[3,[4]]]]
 const items = _.flattenDeep(lists)
 console.log(items)
+console.log('Hello world')
+
+//install node dependency: npm i [package_name]
+//dev dependency: npm i [package_name] -D
+//run command: change in scripts
+//uninstall package: npm uninstall [package_name]
+
+//install package globally
+//sudo npm install -g [package_name]
