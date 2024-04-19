@@ -1,0 +1,34 @@
+title: Bug Report
+
+body:
+
+  - type: markdown
+    content: >
+      Thank you for reporting a bug! To help us investigate the issue efficiently, please provide as much detail as possible in the following sections.
+
+  - type: input
+    name: title
+    label: Bug Title
+    required: true
+    placeholder: Short and descriptive summary of the bug
+
+  - type: textarea
+    name: description
+    label: Bug Description
+    required: true
+    placeholder: Describe the bug in detail, including what you expected to happen and what actually happened.
+
+  - type: textarea
+    name: steps
+    label: Steps to Reproduce
+    required: true
+    placeholder: List the steps someone can take to consistently reproduce the bug.
+
+  - type: dropdown
+    name: environment
+    label: Environment
+    options:
+      - name: Production
+      - name: Staging
+      - name: Development
+    required: true
