@@ -5,28 +5,31 @@ body:
 
 - type: markdown
   attributes:
-    content: >
+    label: >
       Thank you for reporting a bug! To help us investigate the issue efficiently, please provide as much detail as possible in the following sections.
 
 - type: input
   attributes:
     label: title
     description: Bug Title
-    required: true
+    validation:
+      required: true
     placeholder: Short and descriptive summary of the bug
 
 - type: textarea
   attributes:
     label: description
     description: Bug Description
-    required: true
+    validation:
+      required: true
     placeholder: Describe the bug in detail, including what you expected to happen and what actually happened.
 
 - type: textarea
   attributes:
     label: steps
     description: Steps to Reproduce
-    required: true
+    validation:
+      required: true
     placeholder: List the steps someone can take to consistently reproduce the bug.
 
 - type: dropdown
@@ -37,5 +40,6 @@ body:
       - name: Production
       - name: Staging
       - name: Development
-    required: true
+    validation:
+      required: true
 
