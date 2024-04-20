@@ -1,11 +1,8 @@
 name: Bug
 title: "Bug Report"
+labels: [Bug, Enhancement]
 
 body:
-
-- type: markdown
-  attributes:
-    label: Thank you for reporting a bug! To help us investigate the issue efficiently, please provide as much detail as possible in the following sections.
 
 - type: input
   attributes:
