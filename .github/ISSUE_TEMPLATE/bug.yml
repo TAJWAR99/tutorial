@@ -5,8 +5,7 @@ body:
 
 - type: markdown
   attributes:
-    label: >
-      Thank you for reporting a bug! To help us investigate the issue efficiently, please provide as much detail as possible in the following sections.
+    label: Thank you for reporting a bug! To help us investigate the issue efficiently, please provide as much detail as possible in the following sections.
 
 - type: input
   attributes:
@@ -42,6 +41,6 @@ body:
       - name: Production
       - name: Staging
       - name: Development
-    validations:
-      required: true
+  validations:
+    required: true
 
