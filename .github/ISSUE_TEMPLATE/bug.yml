@@ -1,4 +1,5 @@
 name: Bug
+description: Create an Issue
 title: "Bug Report"
 labels: [Bug, Enhancement]
 
