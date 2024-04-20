@@ -12,7 +12,7 @@ body:
   attributes:
     label: title
     description: Bug Title
-    validation:
+    validations:
       required: true
     placeholder: Short and descriptive summary of the bug
 
@@ -20,7 +20,7 @@ body:
   attributes:
     label: description
     description: Bug Description
-    validation:
+    validations:
       required: true
     placeholder: Describe the bug in detail, including what you expected to happen and what actually happened.
 
@@ -28,7 +28,7 @@ body:
   attributes:
     label: steps
     description: Steps to Reproduce
-    validation:
+    validations:
       required: true
     placeholder: List the steps someone can take to consistently reproduce the bug.
 
@@ -40,6 +40,6 @@ body:
       - name: Production
       - name: Staging
       - name: Development
-    validation:
+    validations:
       required: true
 
