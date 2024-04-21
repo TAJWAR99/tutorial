@@ -7,7 +7,7 @@ body:
 
 - type: dropdown
   attributes:
-    label: [SERVER]
+    label: "[SERVER]"
     description: On which server the bug was found?
     multiple: true
     options:
@@ -21,7 +21,7 @@ body:
 
 - type: dropdown
   attributes:
-    label: [BROWSER]
+    label: "[BROWSER]"
     description: What browsers are you seeing the problem on?
     multiple: true
     options:
@@ -37,7 +37,7 @@ body:
 
 - type: input
   attributes:
-    label: [File URL]
+    label: "[File URL]"
     description: Provide the file url
   validations:
     required: false
@@ -45,7 +45,7 @@ body:
 
 - type: textarea
   attributes:
-    label: [Description]
+    label: "[Description]"
     description: Bug Description
     placeholder: Describe the bug in detail. Provide Recording or Screenshots
   validations:
@@ -53,7 +53,7 @@ body:
 
 - type: textarea
   attributes:
-    label: [Reproduction Steps]
+    label: "[Reproduction Steps]"
     description: "How do you trigger this bug? Please walk us through it step by step."
     value: |
       1.
@@ -66,7 +66,7 @@ body:
 
 - type: textarea
   attributes:
-    label: [Actual Result]
+    label: "[Actual Result]"
     description: What is actually happening
     placeholder: Describe the bug in detail, what actually happened.
     render: bash
@@ -76,7 +76,7 @@ body:
 
 - type: textarea
   attributes:
-    label: [Expected Result]
+    label: "[Expected Result]"
     description: Mention your expected feature
     placeholder: Describe the bug in detail, what you expected to happen.
     render: bash
