@@ -18,8 +18,8 @@ body:
 
 - type: dropdown
   attributes:
-    label: Browser
-    description: On which browser the bug was found?
+    label: What browsers are you seeing the problem on?
+      multiple: true
     options:
       - Chrome
       - Microsoft Edge
@@ -63,10 +63,16 @@ body:
 
 - type: textarea
   attributes:
-    label: Steps to Reproduce
-    description: Write the steps in lists
-    placeholder: List the steps someone can take to consistently reproduce the bug. such as, 1) Go to the www.xyx.com/dashboard
-    2) Click on the Button
+    label: Reproduction steps
+    description: "How do you trigger this bug? Please walk us through it step by step."
+    value: |
+      1.
+      2.
+      3.
+      ...
+    render: bash
+    # placeholder: List the steps someone can take to consistently reproduce the bug. such as, 1) Go to the www.xyx.com/dashboard
+    # 2) Click on the Button
   validations:
     required: true
     
