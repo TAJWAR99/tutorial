@@ -11,17 +11,13 @@ body:
     description: On which server the bug was found?
     multiple: true
     options:
-      - Staging (Default)
+      - Staging
       - Production
       - Development
     default: 0
   validations:
     required: true
 
-- type: markdown
-  attributes:
-    value: |
-      ---
 
 - type: dropdown
   attributes:
@@ -29,7 +25,7 @@ body:
     description: What browsers are you seeing the problem on?
     multiple: true
     options:
-      - MS Edge (Default)
+      - MS Edge
       - Chrome
       - Safari
       - Arc
@@ -38,10 +34,6 @@ body:
   validations:
     required: true
 
-- type: markdown
-  attributes:
-    value: |
-      ---
 
 - type: input
   attributes:
@@ -50,23 +42,15 @@ body:
   validations:
     required: false
 
-- type: markdown
-  attributes:
-    value: |
-      ---
 
 - type: textarea
   attributes:
-    label: description
+    label: Description
     description: Bug Description
     placeholder: Describe the bug in detail. Provide Recording or Screenshots
   validations:
     required: false
 
-- type: markdown
-  attributes:
-    value: |
-      ---
 
 - type: textarea
   attributes:
@@ -77,10 +61,6 @@ body:
   validations:
     required: false
 
-- type: markdown
-  attributes:
-    value: |
-      ---
 
 - type: textarea
   attributes:
@@ -92,10 +72,6 @@ body:
   validations:
     required: true
 
-- type: markdown
-  attributes:
-    value: |
-      ---
 
 - type: textarea
   attributes:
