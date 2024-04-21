@@ -7,10 +7,8 @@ body:
 
 - type: dropdown
   attributes:
-    label: SERVER: 
+    label: + SERVER: 
     description: On which server the bug was found?
-    value: |
-        ---
     multiple: true
     options:
       - Production
@@ -19,6 +17,11 @@ body:
     default: Staging
   validations:
     required: true
+
+- type: markdown
+    attributes:
+      value: |
+        ---
 
 - type: dropdown
   attributes:
