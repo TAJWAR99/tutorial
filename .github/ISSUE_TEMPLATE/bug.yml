@@ -14,7 +14,7 @@ body:
       - Production
       - Staging
       - Development
-    default: + Staging
+    default: Staging
   validations:
     required: true
 
