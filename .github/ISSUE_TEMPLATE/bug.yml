@@ -12,9 +12,8 @@ body:
     multiple: true
     options:
       - Production
-      - Staging
+      - Staging (Default)
       - Development
-    default: 1
   validations:
     required: true
 
@@ -30,11 +29,10 @@ body:
     multiple: true
     options:
       - Chrome
-      - MS Edge
+      - MS Edge (Default)
       - Safari
       - Arc
       - Brave
-    default: 1
   validations:
     required: true
 
