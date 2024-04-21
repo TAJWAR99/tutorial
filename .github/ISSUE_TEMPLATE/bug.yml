@@ -48,7 +48,6 @@ body:
     label: Description
     description: Bug Description
     placeholder: Describe the bug in detail. Provide Recording or Screenshots
-    render: bash
   validations:
     required: false
 
