@@ -14,14 +14,14 @@ body:
       - Production
       - Staging
       - Development
-    default: Staging
+    default: 1
   validations:
     required: true
 
-# - type: markdown
-#   attributes:
-#     value: |
-#       ---
+- type: markdown
+  attributes:
+    value: |
+      ---
 
 - type: dropdown
   attributes:
@@ -34,7 +34,7 @@ body:
       - Safari
       - Arc
       - Brave
-    default: MS Edge
+    default: 1
   validations:
     required: true
 
