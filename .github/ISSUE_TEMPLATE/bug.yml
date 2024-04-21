@@ -7,14 +7,14 @@ body:
 
 - type: dropdown
   attributes:
-    label: + SERVER: 
+    label: SERVER: 
     description: On which server the bug was found?
     multiple: true
     options:
       - Production
       - Staging
       - Development
-    default: Staging
+    default: + Staging
   validations:
     required: true
 
