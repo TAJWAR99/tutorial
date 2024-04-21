@@ -7,7 +7,9 @@ body:
 
 - type: dropdown
   attributes:
-    label: SERVER: <hr >
+    label: SERVER: 
+    value: |
+      ---
     description: On which server the bug was found?
     multiple: true
     options:
