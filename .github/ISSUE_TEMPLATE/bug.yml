@@ -1,9 +1,33 @@
-name: Bug
+name: Bug Report Form
 description: Create an Issue
-title: "Bug Report"
-labels: [Bug, Enhancement]
+title: "<Module Name: Bug title>"
+labels: [Bug]
 
 body:
+
+- type: dropdown
+  attributes:
+    label: Server
+    description: On which server the bug was found?
+    options:
+      - Production
+      - Staging
+      - Development
+  validations:
+    required: true
+
+- type: dropdown
+  attributes:
+    label: Browser
+    description: On which browser the bug was found?
+    options:
+      - name: Chrome
+      - name: Microsoft Edge
+      - name: Safari
+      - name: Arc
+      - name: Brave
+  validations:
+    required: true
 
 - type: input
   attributes:
@@ -20,25 +44,30 @@ body:
     description: Bug Description
     placeholder: Describe the bug in detail, including what you expected to happen and what actually happened.
   validations:
+    required: false
+
+- type: textarea
+  attributes:
+    label: Actual Result
+    description: What is actually happening
+    placeholder: Describe the bug in detail, what actually happened.
+  validations:
     required: true
 
 - type: textarea
   attributes:
-    label: steps
-    description: Steps to Reproduce
+    label: Expected Result
+    description: Mention your expected feature
+    placeholder: Describe the bug in detail, what you expected to happen.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Steps to Reproduce
+    description: Write the steps in lists
     placeholder: List the steps someone can take to consistently reproduce the bug.
   validations:
     required: true
     
-
-- type: dropdown
-  attributes:
-    label: environment
-    description: Environment
-    options:
-      - name: Production
-      - name: Staging
-      - name: Development
-  validations:
-    required: true
 
