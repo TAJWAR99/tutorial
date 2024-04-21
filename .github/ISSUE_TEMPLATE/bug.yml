@@ -73,6 +73,7 @@ body:
     label: Actual Result
     description: What is actually happening
     placeholder: Describe the bug in detail, what actually happened.
+    render: bash
   validations:
     required: false
 
@@ -86,6 +87,8 @@ body:
     label: Expected Result
     description: Mention your expected feature
     placeholder: Describe the bug in detail, what you expected to happen.
+    render: bash
+    
   validations:
     required: true
 
