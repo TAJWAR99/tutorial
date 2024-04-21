@@ -7,26 +7,29 @@ body:
 
 - type: dropdown
   attributes:
-    label: Server
+    label: SERVER: <hr>
     description: On which server the bug was found?
     multiple: true
     options:
       - Production
       - Staging
       - Development
+    default: Staging
   validations:
     required: true
 
 - type: dropdown
   attributes:
-    label: What browsers are you seeing the problem on?
+    label: BROWSER:
+    description: What browsers are you seeing the problem on?
     multiple: true
     options:
       - Chrome
-      - Microsoft Edge
+      - MS Edge
       - Safari
       - Arc
       - Brave
+    default: MS Edge
   validations:
     required: true
 
@@ -60,7 +63,7 @@ body:
     description: Mention your expected feature
     placeholder: Describe the bug in detail, what you expected to happen.
   validations:
-    required: false
+    required: true
 
 - type: textarea
   attributes:
@@ -70,11 +73,10 @@ body:
       1.
       2.
       3.
-      ...
     render: bash
     # placeholder: List the steps someone can take to consistently reproduce the bug. such as, 1) Go to the www.xyx.com/dashboard
     # 2) Click on the Button
   validations:
-    required: true
+    required: false
     
 
