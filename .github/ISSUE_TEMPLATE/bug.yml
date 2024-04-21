@@ -1,6 +1,6 @@
-name: Bug Report Form
+name: Bug Report
 description: Create an Issue
-title: "<Module Name: Bug title>"
+title: "Module Name <Bug title>"
 labels: [Bug]
 
 body:
@@ -21,28 +21,27 @@ body:
     label: Browser
     description: On which browser the bug was found?
     options:
-      - name: Chrome
-      - name: Microsoft Edge
-      - name: Safari
-      - name: Arc
-      - name: Brave
+      - Chrome
+      - Microsoft Edge
+      - Safari
+      - Arc
+      - Brave
   validations:
     required: true
 
 - type: input
   attributes:
-    label: title
-    description: Bug Title
-    placeholder: Short and descriptive summary of the bug
+    label: File URL
+    description: Provide the file url
   validations:
-    required: true
+    required: false
     
 
 - type: textarea
   attributes:
     label: description
     description: Bug Description
-    placeholder: Describe the bug in detail, including what you expected to happen and what actually happened.
+    placeholder: Describe the bug in detail. Provide Recording or Screenshots
   validations:
     required: false
 
@@ -52,7 +51,7 @@ body:
     description: What is actually happening
     placeholder: Describe the bug in detail, what actually happened.
   validations:
-    required: true
+    required: false
 
 - type: textarea
   attributes:
@@ -60,13 +59,14 @@ body:
     description: Mention your expected feature
     placeholder: Describe the bug in detail, what you expected to happen.
   validations:
-    required: true
+    required: false
 
 - type: textarea
   attributes:
     label: Steps to Reproduce
     description: Write the steps in lists
-    placeholder: List the steps someone can take to consistently reproduce the bug.
+    placeholder: List the steps someone can take to consistently reproduce the bug. such as, 1) Go to the www.xyx.com/dashboard
+    2) Click on the Button
   validations:
     required: true
     
