@@ -1,13 +1,13 @@
 name: Bug Report
 description: Create an Issue
-title: "Module Name <Bug title>"
-labels: [Bug]
+title: "Module Name: <Bug title>"
+labels: ["bug", "triage"]
 
 body:
 
 - type: dropdown
   attributes:
-    label: SERVER
+    label: + SERVER:
     description: On which server the bug was found?
     multiple: true
     options:
@@ -25,7 +25,7 @@ body:
 
 - type: dropdown
   attributes:
-    label: BROWSER
+    label: BROWSER:
     description: What browsers are you seeing the problem on?
     multiple: true
     options:
@@ -38,13 +38,22 @@ body:
   validations:
     required: true
 
+- type: markdown
+  attributes:
+    value: |
+      ---
+
 - type: input
   attributes:
     label: File URL
     description: Provide the file url
   validations:
     required: false
-    
+
+- type: markdown
+  attributes:
+    value: |
+      ---
 
 - type: textarea
   attributes:
@@ -54,6 +63,11 @@ body:
   validations:
     required: false
 
+- type: markdown
+  attributes:
+    value: |
+      ---
+
 - type: textarea
   attributes:
     label: Actual Result
@@ -62,6 +76,11 @@ body:
   validations:
     required: false
 
+- type: markdown
+  attributes:
+    value: |
+      ---
+
 - type: textarea
   attributes:
     label: Expected Result
@@ -69,6 +88,11 @@ body:
     placeholder: Describe the bug in detail, what you expected to happen.
   validations:
     required: true
+
+- type: markdown
+  attributes:
+    value: |
+      ---
 
 - type: textarea
   attributes:
