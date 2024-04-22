@@ -1,13 +1,13 @@
 name: Bug Report
 description: Create an Issue
-title: "Module: <Bug title>"
+title: "<Bug title>"
 labels: ["bug", "improvement"]
 
 body:
 
 - type: input
   attributes:
-    label: "File URL"
+    label: "URL"
     description: Provide the file url
   validations:
     required: false
