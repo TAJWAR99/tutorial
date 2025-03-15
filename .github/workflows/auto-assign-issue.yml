@@ -1,0 +1,15 @@
+name: Auto Assign Issues to Project
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  assign_issue_to_project:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assign issue to GitHub Project
+        run: |
+          curl -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/projects/columns/f75ad846/cards \
+          -d "{\"content_id\":${{ github.event.issue.id }}, \"content_type\":\"Issue\"}"
