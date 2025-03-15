@@ -7,9 +7,12 @@ jobs:
   assign_issue_to_project:
     runs-on: ubuntu-latest
     steps:
-      - name: PROJECT
+      - name: Assign issue to GitHub Project
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          PROJECT_ID: "3"  # Replace with your project ID
         run: |
-          curl -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+          curl -X POST -H "Authorization: Bearer $GH_TOKEN" \
           -H "Accept: application/vnd.github.v3+json" \
-          https://api.github.com/projects/columns/f75ad846/cards \
-          -d "{\"content_id\":${{ github.event.issue.id }}, \"content_type\":\"Issue\"}"
+          -d '{"content_id": "${{ github.event.issue.node_id }}", "content_type": "Issue"}' \
+          https://api.github.com/projects/3/columns/f75ad846/cards
