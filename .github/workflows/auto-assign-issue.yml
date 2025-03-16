@@ -10,9 +10,9 @@ jobs:
       - name: Assign issue to GitHub Project
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          PROJECT_ID: "PVT_kwHOA8GFZM4AHojX"  # Replace with your project ID
+          PROJECT_ID: "PVT_kwHOA8GFZM4AHqbi"  # Replace with your project ID
         run: |
           curl -X POST -H "Authorization: Bearer $GH_TOKEN" \
           -H "Accept: application/vnd.github.v3+json" \
           -d '{"content_id": "${{ github.event.issue.node_id }}", "content_type": "Issue"}' \
-          https://api.github.com/projects/PVT_kwHOA8GFZM4AHojX/columns/f75ad846/cards
+          https://api.github.com/projects/PVT_kwHOA8GFZM4AHqbi/columns/f75ad846/cards
